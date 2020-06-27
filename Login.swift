@@ -12,7 +12,13 @@ import UIKit
 
 class Password: UIViewController {
     
-
+    @IBOutlet weak var oneLable: UILabel!
+    @IBOutlet weak var twoLable: UILabel!
+    @IBOutlet weak var threeLable: UILabel!
+    @IBOutlet weak var forthLable: UILabel!
+    @IBOutlet weak var fifthLable: UILabel!
+    @IBOutlet weak var sixLeble: UILabel!
+    
     
     @IBOutlet weak var one: UIButton!
     @IBOutlet weak var two: UIButton!
@@ -29,6 +35,39 @@ class Password: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupButtons()
+        setupStack()
+    }
+    
+    func setupStack() {
+        oneLable.layer.masksToBounds = true
+        oneLable.layer.cornerRadius = oneLable.frame.size.width / 2
+        oneLable.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        oneLable.layer.borderWidth = 1
+        
+        twoLable.layer.masksToBounds = true
+        twoLable.layer.cornerRadius = oneLable.frame.size.width / 2
+        twoLable.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        twoLable.layer.borderWidth = 1
+        
+        threeLable.layer.masksToBounds = true
+        threeLable.layer.cornerRadius = threeLable.frame.size.width / 2
+        threeLable.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        threeLable.layer.borderWidth = 1
+        
+        forthLable.layer.masksToBounds = true
+        forthLable.layer.cornerRadius = forthLable.frame.size.width / 2
+        forthLable.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        forthLable.layer.borderWidth = 1
+        
+        fifthLable.layer.masksToBounds = true
+        fifthLable.layer.cornerRadius = fifthLable.frame.size.width / 2
+        fifthLable.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        fifthLable.layer.borderWidth = 1
+        
+        sixLeble.layer.masksToBounds = true
+        sixLeble.layer.cornerRadius = sixLeble.frame.size.width / 2
+        sixLeble.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        sixLeble.layer.borderWidth = 1
     }
     
     func setupButtons() {
